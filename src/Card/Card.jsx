@@ -1,7 +1,16 @@
 import { useEffect, useState } from "react";
 import { useLoaderData, useParams } from "react-router-dom";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Card = () => {
+
+    const  diffToast= () =>{
+        toast("successful",{
+            position: toast.POSITION.TOP_CENTER
+        })
+    }
+
     const [card, setCard] = useState({})
 
     const { img, category, description, price, text_color } = card;
@@ -31,7 +40,7 @@ const Card = () => {
                     />
                     <figcaption className="absolute bottom-8 left-2/4 flex w-[calc(100%-4rem)] -translate-x-2/4 justify-between rounded-xl border border-white bg-gray/75 py-4 px-6 shadow-lg shadow-black/5 saturate-200 backdrop-blur-sm">
                         <div>
-                            <button style={{ backgroundColor: `${text_color}` }} className="btn text-white font-medium">Donate {price}</button>
+                            <button onClick={diffToast} style={{ backgroundColor: `${text_color}` }} className="btn text-white font-medium">Donate {price}</button>
                         </div>
                     </figcaption>
                 </figure>
@@ -40,6 +49,7 @@ const Card = () => {
                 <h2 className="text-4xl font-bold mb-3">{category}</h2>
                 <p>{description}</p>
             </div>
+            <ToastContainer></ToastContainer>
         </div>
     );
 };
