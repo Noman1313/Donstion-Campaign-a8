@@ -1,0 +1,134 @@
+[
+    {
+        "id": 1,
+        "img": "https://i.ibb.co/qgpDYDp/Health.png",
+        "title": "Health",
+        "category": "Clean water for children",
+        "description": "Explore a world of well-being and vitality with our range of health products. From vitamins and supplements to fitness equipment, we have everything you need to live a healthy and active life. ",
+        "price": "$290",
+        "card_bg_color": "#d8e5f0",
+        "category_bg_color": "#aad2f2",
+        "text_color": "#0052FF"
+    },
+    {
+        "id": 2,
+        "img": "https://i.ibb.co/c3YQZXt/Education.png",
+        "title": "Education",
+        "category": "Good education",
+        "description": "Ignite your curiosity and expand your knowledge with our educational resources. Whether you're a student or a lifelong learner, we offer courses, books, and tools to help you excel in your studies and personal growth.",
+        "price": "$350",
+        "card_bg_color": "#f2d3d0",
+        "category_bg_color": "#f7a9a1",
+        "text_color": "#FF444A"
+    },
+    {
+        "id": 3,
+        "img": "https://i.ibb.co/6HrZPt0/Clothing.png",
+        "title": "Clothing",
+        "category": "Used Clothing Drive",
+        "description": "Elevate your style with our latest fashion collection. From trendy outfits for all seasons to timeless classics, we have the perfect attire to make you look and feel your best, no matter the occasion.",
+        "price": "$410",
+        "card_bg_color": "#d1edd8",
+        "category_bg_color": "#aaf0bc",
+        "text_color": "#79C23F"
+    },
+    {
+        "id": 4,
+        "img": "https://i.ibb.co/x6rsZJC/Food.png",
+        "title": "Food",
+        "category": "Better Food for Everyone",
+        "description": "Savor the flavors of exquisite cuisine with our gourmet food selection. From artisanal cheeses and fine wines to delectable desserts, indulge your taste buds in a gastronomic adventure.",
+        "price": "$500",
+        "card_bg_color": "#f0e0da",
+        "category_bg_color": "#f0c7b9",
+        "text_color": "#F87147"
+    },
+    {
+        "id": 5,
+        "img": "https://i.ibb.co/x6rsZJC/Food.png",
+        "title": "Food",
+        "category": "Better Food for Everyone",
+        "description": "Savor the flavors of exquisite cuisine with our gourmet food selection. From artisanal cheeses and fine wines to delectable desserts, indulge your taste buds in a gastronomic adventure.",
+        "price": "$500",
+        "card_bg_color": "#f0e0da",
+        "category_bg_color": "#f0c7b9",
+        "text_color": "#F87147"
+    },
+    {
+        "id": 6,
+        "img": "https://i.ibb.co/6HrZPt0/Clothing.png",
+        "title": "Clothing",
+        "category": "Used Clothing Drive",
+        "description": "Elevate your style with our latest fashion collection. From trendy outfits for all seasons to timeless classics, we have the perfect attire to make you look and feel your best, no matter the occasion.",
+        "price": "$410",
+        "card_bg_color": "#d1edd8",
+        "category_bg_color": "#aaf0bc",
+        "text_color": "#79C23F"
+    },
+    {
+        "id": 7,
+        "img": "https://i.ibb.co/c3YQZXt/Education.png",
+        "title": "Education",
+        "category": "Good education",
+        "description": "Ignite your curiosity and expand your knowledge with our educational resources. Whether you're a student or a lifelong learner, we offer courses, books, and tools to help you excel in your studies and personal growth.",
+        "price": "$350",
+        "card_bg_color": "#f2d3d0",
+        "category_bg_color": "#f7a9a1",
+        "text_color": "#FF444A"
+    },
+    {
+        "id": 8,
+        "img": "https://i.ibb.co/qgpDYDp/Health.png",
+        "title": "Health",
+        "category": "Clean water for children",
+        "description": "Explore a world of well-being and vitality with our range of health products. From vitamins and supplements to fitness equipment, we have everything you need to live a healthy and active life. ",
+        "price": "$290",
+        "card_bg_color": "#d8e5f0",
+        "category_bg_color": "#aad2f2",
+        "text_color": "#0052FF"
+    },
+    {
+        "id": 9,
+        "img": "https://i.ibb.co/qgpDYDp/Health.png",
+        "title": "Health",
+        "category": "Clean water for children",
+        "description": "Explore a world of well-being and vitality with our range of health products. From vitamins and supplements to fitness equipment, we have everything you need to live a healthy and active life. ",
+        "price": "$290",
+        "card_bg_color": "#d8e5f0",
+        "category_bg_color": "#aad2f2",
+        "text_color": "#0052FF"
+    },
+    {
+        "id": 10,
+        "img": "https://i.ibb.co/c3YQZXt/Education.png",
+        "title": "Education",
+        "category": "Good education",
+        "description": "Ignite your curiosity and expand your knowledge with our educational resources. Whether you're a student or a lifelong learner, we offer courses, books, and tools to help you excel in your studies and personal growth.",
+        "price": "$350",
+        "card_bg_color": "#f2d3d0",
+        "category_bg_color": "#f7a9a1",
+        "text_color": "#FF444A"
+    },
+    {
+        "id": 11,
+        "img": "https://i.ibb.co/6HrZPt0/Clothing.png",
+        "title": "Clothing",
+        "category": "Used Clothing Drive",
+        "description": "Elevate your style with our latest fashion collection. From trendy outfits for all seasons to timeless classics, we have the perfect attire to make you look and feel your best, no matter the occasion.",
+        "price": "$410",
+        "card_bg_color": "#d1edd8",
+        "category_bg_color": "#aaf0bc",
+        "text_color": "#79C23F"
+    },
+    {
+        "id": 12,
+        "img": "https://i.ibb.co/x6rsZJC/Food.png",
+        "title": "Food",
+        "category": "Better Food for Everyone",
+        "description": "Savor the flavors of exquisite cuisine with our gourmet food selection. From artisanal cheeses and fine wines to delectable desserts, indulge your taste buds in a gastronomic adventure.",
+        "price": "$500",
+        "card_bg_color": "#f0e0da",
+        "category_bg_color": "#f0c7b9",
+        "text_color": "#F87147"
+    }
+]
