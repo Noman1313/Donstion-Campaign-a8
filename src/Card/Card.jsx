@@ -5,10 +5,40 @@ import 'react-toastify/dist/ReactToastify.css';
 
 const Card = () => {
 
-    const  diffToast= () =>{
-        toast("successful",{
-            position: toast.POSITION.TOP_CENTER
-        })
+    const handleDiffToast = () => {
+
+        const addDonation = [];
+
+        const donationItems = JSON.parse(localStorage.getItem('card'));
+        if (!donationItems) {
+            addDonation.push(card);
+            localStorage.setItem('card', JSON.stringify(addDonation))
+            toast("Donation successful", {
+                position: toast.POSITION.TOP_CENTER
+            })
+        }
+        else {
+
+            const isExist = donationItems.find(item => item.id === idInt)
+
+
+            if (!isExist) {
+                addDonation.push(...donationItems, card);
+                localStorage.setItem('card', JSON.stringify(addDonation))
+                toast("Donation successful", {
+                    position: toast.POSITION.TOP_CENTER
+                })
+
+            }
+            else {
+                toast("already added", {
+                    position: toast.POSITION.TOP_CENTER
+                })
+            }
+
+        }
+
+        // localStorage.setItem('card', JSON.stringify([{name:"noman"},{name:"jim"}]))
     }
 
     const [card, setCard] = useState({})
@@ -40,7 +70,7 @@ const Card = () => {
                     />
                     <figcaption className="absolute bottom-8 left-2/4 flex w-[calc(100%-4rem)] -translate-x-2/4 justify-between rounded-xl border border-white bg-gray/75 py-4 px-6 shadow-lg shadow-black/5 saturate-200 backdrop-blur-sm">
                         <div>
-                            <button onClick={diffToast} style={{ backgroundColor: `${text_color}` }} className="btn text-white font-medium">Donate {price}</button>
+                            <button onClick={handleDiffToast} style={{ backgroundColor: `${text_color}` }} className="btn text-white font-medium">Donate {price}</button>
                         </div>
                     </figcaption>
                 </figure>
