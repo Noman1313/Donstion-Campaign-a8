@@ -1,7 +1,8 @@
+import { PropTypes } from "prop-types";
 
 const CardDetails = ({ card }) => {
     const { img, title, category, price, card_bg_color, category_bg_color, text_color } = card
-    console.log(card);
+
     return (
         <div>
             <div style={{ backgroundColor: `${card_bg_color}` }} className="flex  rounded-xl">
@@ -28,5 +29,8 @@ const CardDetails = ({ card }) => {
         </div>
     );
 };
+CardDetails.propTypes = {
+    card: PropTypes.object
+}
 
 export default CardDetails;

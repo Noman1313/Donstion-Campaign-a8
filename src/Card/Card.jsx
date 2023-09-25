@@ -38,7 +38,7 @@ const Card = () => {
 
         }
 
-        // localStorage.setItem('card', JSON.stringify([{name:"noman"},{name:"jim"}]))
+        
     }
 
     const [card, setCard] = useState({})
@@ -47,14 +47,11 @@ const Card = () => {
 
     const { id } = useParams();
     const idInt = parseInt(id)
-    // console.log(idInt);
 
     const cards = useLoaderData()
-    // console.log(cards);
 
     useEffect(() => {
         const findCard = cards?.find(card => card.id === idInt)
-        // console.log(findCard);
         setCard(findCard)
     }, [idInt, cards])
 
