@@ -17,10 +17,10 @@ const CardDetails = ({ card }) => {
                     <h6 style={{ backgroundColor: `${category_bg_color}` }} className=" w-24 text-center rounded-md mb-4 ">
                         {title}
                     </h6>
-                    <h4 className="mb-2 ">
+                    <h4 className="mb-2 text-lg font-semibold">
                         {category}
                     </h4>
-                    <h4 style={{ color: `${text_color}` }} className="mb-8 ">
+                    <h4 style={{ color: `${text_color}` }} className="mb-8 font-semibold">
                         {price}
                     </h4>
                     <button style={{ background: `${text_color}` }} className="btn text-sm md:text-lg font-semibold">View Details</button>
