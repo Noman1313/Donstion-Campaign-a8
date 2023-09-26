@@ -1,8 +1,9 @@
-# React + Vite
+Added project features
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+1. There is a home components, and some cards. if click a card, open a new components and show details.
 
-Currently, two official plugins are available:
+2. Open a new components and there is a donation button, if click the button a toast open and show successful but click more then again a toast show and said already added.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+3. When click the button it also added the donation components. if donetion components added more then 4 cards then there is show a button. when click the button show all card in donation components.
+
+4. Donation components also added in the localstorage.
