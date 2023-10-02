@@ -1,29 +1,73 @@
 import { useEffect, useState } from "react";
-import { Chart } from "react-google-charts";
+import { PieChart, Pie, Cell } from "recharts";
 
-const totalDonation = 12;
+
+
 
 
 const Statistics = () => {
-    const [donation, setDonation] = useState(0);
+
+    const [count, setCount] = useState(0);
+
+
+    const data = [
+        { name: "Group A", value: 12 },
+        { name: "Group B", value: count }
+    ];
+
     useEffect(() => {
-        const data = localStorage.getItem('card')
-        console.log(data);
-        setDonation(data);
+        const localData = localStorage.getItem('card')
+        if (localData) {
+            const parseData = JSON.parse(localData)
+            setCount(parseData.length)
+        }
     }, [])
-    console.log(donation);
-    const options = donation
+    const COLORS = ["#00C49F", "#FF8042"];
+
+    const RADIAN = Math.PI / 180;
+    const renderCustomizedLabel = ({
+        cx,
+        cy,
+        midAngle,
+        innerRadius,
+        outerRadius,
+        percent,
+
+    },) => {
+        const radius = innerRadius + (outerRadius - innerRadius) * 0.5;
+        const x = cx + radius * Math.cos(-midAngle * RADIAN);
+        const y = cy + radius * Math.sin(-midAngle * RADIAN);
+
+        return (
+            <text
+                x={x}
+                y={y}
+                fill="white"
+                textAnchor={x > cx ? "start" : "end"}
+                dominantBaseline="central"
+            >
+                {`${(percent * 100).toFixed(0)}%`}
+            </text>
+        );
+    };
+
     return (
-        <div>
-            <h3>Pai chart</h3>
-            <Chart
-                chartType="PieChart"
-                data={totalDonation}
-                options={options}
-                width={"100%"}
-                height={"400px"}
-            />
-        </div>
+        <PieChart width={400} height={400}>
+            <Pie
+                data={data}
+                cx={200}
+                cy={200}
+                labelLine={false}
+                label={renderCustomizedLabel}
+                outerRadius={80}
+                fill="#8884d8"
+                dataKey="value"
+            >
+                {data.map((entry, index) => (
+                    <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
+                ))}
+            </Pie>
+        </PieChart>
     );
 };
 
